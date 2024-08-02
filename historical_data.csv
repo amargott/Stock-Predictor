@@ -1,0 +1,6 @@
+import yfinance as yf
+
+# Download historical data for a sample stock
+ticker = "AAPL"  # Example stock ticker, can replace with other stocks testing
+data = yf.download(ticker, period="5y")
+data.to_csv('data/historical_data.csv')
